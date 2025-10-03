@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Crear Cuenta - Pollution</title>
+
+  
+  <link rel="stylesheet" href="estilo de contacto.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER (clases específicas para evitar conflictos) -->
+  <header class="site-header">
+    <div class="banner-container">
+      <img src="img/baner.png" alt="Banner" class="banner">
+    </div>
+    <div class="header-texto">
+      <h1>🌍 Pollution: Crea tu cuenta ecológica</h1>
+      <p>Conviértete en un héroe ecológico mientras te diviertes 💚</p>
+    </div>
+
+    <nav class="site-nav" aria-label="Principal">
+      <ul>
+        <li><a href="index.html">🏠 Inicio</a></li>
+        <li><a href="educativo.html">📚 Educativo</a></li>
+        <li><a href="CrearCuenta.html" class="activo">📝 Crear Cuenta</a></li>
+        <li><a href="sopa de letras.html">🔠 Sopa de letras</a></li>
+        <li><a href="Crucigrama.html">🔤 Crucigrama</a></li>
+        <li><a href="Juego.html">🎮 Juego</a></li>
+        <li><a href="Evaluación .html">📄 Evaluación</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- SISTEMA DE USUARIOS -->
+  <section class="user-system-container">
+    <div class="user-welcome-card">
+      <div id="userInfo"></div>
+      <div id="userStatus" class="user-status"></div>
+    </div>
+    
+    <div class="user-actions">
+      <button class="btn stats-btn">
+        <span class="icon">📊</span>
+        Mis Estadísticas
+      </button>
+      <button class="btn guest-btn">
+        <span class="icon">🎮</span>
+        Modo Invitado
+      </button>
+      <button class="btn logout-btn">
+        <span class="icon">🚪</span>
+        Cerrar Sesión
+      </button>
+    </div>
+
+  <!-- FORMULARIO -->
+  <main class="page-main">
+    <form id="form-registro" autocomplete="off">
+      <h2>📝 Crear Cuenta</h2>
+
+      <input type="text" name="nombre" id="nombre" placeholder="Nombres" required>
+      <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+      <input type="text" name="telefono" id="telefono" placeholder="Teléfono" required>
+
+      <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+      <input type="email" name="confirmar_email" id="confirmar_email" placeholder="Confirmar correo electrónico" required>
+
+      <input type="password" name="password" id="password" placeholder="Contraseña" required>
+      <input type="password" name="confirmar" id="confirmar" placeholder="Confirmar contraseña" required>
+
+      <input type="submit" class="btn1" value="Enviar">
+    </form>
+  </main>
+<p>¿Ya tienes cuenta? 
+  <a href="Login.html">Inicia sesión aquí</a>
+</p>
+
+  <hr class="barra-divisoria">
+
+  <!-- FOOTER unificado (clases específicas) -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-section footer-contacto">
+        <h4>Contacto</h4>
+        <p>Email: soporte@pollution.com</p>
+        <p>Teléfono: +57 310 861 8137</p>
+        <p>Dirección: Vereda Tierra de Gonzales, Moniquirá, Boyacá</p>
+      </div>
+
+      <div class="footer-section footer-mapa">
+        <h4>Ubicación</h4>
+        <p>Moniquirá, Boyacá — Vereda Tierra de Gonzales</p>
+      </div>
+
+      <div class="footer-section footer-boletin">
+        <h4>Suscríbete</h4>
+        <form id="formBoletin">
+          <input type="email" placeholder="Tu correo" required>
+          <button type="submit">Suscribirse</button>
+        </form>
+      </div>
+
+      <div class="footer-section footer-redes">
+        <h4>Síguenos</h4>
+        <!-- ancho/alto en el HTML como fallback -->
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+          <img src="img/instagram.png" alt="Instagram" class="icon-redes" width="28" height="28" style="width:28px;height:28px;">
+          Instagram
+        </a>
+      </div>
+    </div>
+
+    <p class="copyright">&copy; 2025 Pollution | Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- JS separado -->
+  <script src="crear_cuenta.js"></script>
+  <script src="user-system.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sopa de Letras - Energías Limpias</title>
+  <link rel="stylesheet" href="user-styles.css">
+  
+  <link rel="stylesheet" href="estilo sopa.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <img src="img/baner.png" alt="Banner" class="banner">
+  <div class="header-texto">
+    <h1>🌍 Pollution: Aprende Buscando conceptos</h1>
+    <p>Conviértete en un héroe ecológico mientras te diviertes 💚</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 Inicio</a></li>
+      <li><a href="educativo.html">📚 Educativo</a></li>
+      <li><a href="CrearCuenta.html">📝 Crear Cuenta</a></li>
+      <li><a href="sopa de letras.html" class="activo">🔠 Sopa de letras</a></li>
+      <li><a href="Crucigrama.html">🔤 Crucigrama</a></li>
+      <li><a href="Juego.html">🎮 Juego</a></li>
+      <li><a href="Evaluación .html">📄 Evaluación</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- SISTEMA DE USUARIOS -->
+  <section class="user-system-container">
+    <div class="user-welcome-card">
+      <div id="userInfo"></div>
+      <div id="userStatus" class="user-status"></div>
+    </div>
+    
+    <div class="user-actions">
+      <button class="btn stats-btn">
+        <span class="icon">📊</span>
+        Mis Estadísticas
+      </button>
+      <button class="btn guest-btn">
+        <span class="icon">🎮</span>
+        Modo Invitado
+      </button>
+      <button class="btn logout-btn">
+        <span class="icon">🚪</span>
+        Cerrar Sesión
+      </button>
+    </div>
+  </section>
+<main>
+  <!-- Mascota narradora -->
+  <section class="mascota-section">
+    <img src="img/mascota.png" alt="EcoGatito" class="mascota" />
+    <div id="textoMascota" class="texto-mascota"></div>
+    <button id="btnSiguiente" class="btn-siguiente">▶️ Siguiente</button>
+  </section>
+
+  <!-- Juego -->
+  <section id="juego" style="display:none;">
+    <div class="info">
+      <p>⏳ Tiempo: <span id="tiempo">8:00</span></p>
+      <p>✅ Palabras encontradas: <span id="encontradas">0</span>/<span id="total"></span></p>
+    </div>
+
+    <div class="sopa-container">
+      <div id="sopa" class="sopa-grid"></div>
+      <ul id="listaPalabras" class="word-list"></ul>
+    </div>
+
+    <div id="finJuego" class="fin-juego" style="display:none;">
+      <h2 id="felicitacionFinal"></h2>
+      <p>🎯 Ahora pasa al <a href="Crucigrama.html">Crucigrama</a> para continuar la aventura.</p>
+    </div>
+  </section>
+</main>
+
+<!-- LÍNEA DIVISORIA -->
+<hr class="barra-divisoria">
+
+<!-- FOOTER PROFESIONAL -->
+<footer>
+  <div class="footer-container">
+    <!-- Información de contacto -->
+    <div class="footer-contacto">
+      <h3>Contacto</h3>
+      <p>Email: soporte@pollution.com</p>
+      <p>Teléfono: +57 310 861 8137</p>
+      <p>Dirección: Vereda Tierra de Gonzales, Moniquirá, Boyacá</p>
+    </div>
+
+    <!-- Mapa -->
+    <div class="footer-mapa">
+      <h3>Ubicación</h3>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.123456789!2d-73.391234!3d5.500123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5f1234567890ab%3A0xabcdef123456789!2sMoniquir%C3%A1%2C%20Boyac%C3%A1!5e0!3m2!1ses!2sco!4v1690000000000!5m2!1ses!2sco" 
+        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- Boletín -->
+    <div class="footer-boletin">
+      <h3>Suscríbete</h3>
+      <p>Recibe noticias y novedades sobre energías limpias.</p>
+      <form id="formBoletin">
+        <input type="email" placeholder="Tu correo" required>
+        <button type="submit">Suscribirse</button>
+      </form>
+    </div>
+
+    <!-- Redes sociales -->
+    <div class="footer-redes">
+      <h3>Síguenos</h3>
+      <a href="https://instagram.com/" target="_blank" class="instagram">
+        <img src="img/instagram.png" alt="Instagram" class="icon-redes"> Instagram
+      </a>
+    </div>
+  </div>
+
+  <p class="copyright">&copy; 2025 Pollution | Todos los derechos reservados.</p>
+</footer>
+
+<script src="sopa.js"></script>
+<script src="user-system.js"></script>
+</body>
+</html>

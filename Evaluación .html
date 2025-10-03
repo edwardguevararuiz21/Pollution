@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> Pollutio-Evaluación Energías Limpias - Niños</title>
+  <link rel="stylesheet" href="Estilos evaluación .css" />
+  <link rel="stylesheet" href="user-styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+ <!-- HEADER  -->
+  <header class="site-header">
+    <div class="banner-container">
+      <img src="img/baner.png" alt="Banner" class="banner">
+    </div>
+    <div class="header-texto">
+      <h1>🌍 Pollution: Evalua tus conocimientos</h1>
+      <p>Conviértete en un héroe ecológico mientras te diviertes 💚</p>
+    </div>
+
+    <nav class="site-nav" aria-label="Principal">
+      <ul>
+        <li><a href="index.html">🏠 Inicio</a></li>
+        <li><a href="educativo.html">📚 Educativo</a></li>
+        <li><a href="CrearCuenta.html" >📝 Crear Cuenta</a></li>
+        <li><a href="sopa de letras.html">🔠 Sopa de letras</a></li>
+        <li><a href="Crucigrama.html">🔤 Crucigrama</a></li>
+        <li><a href="Juego.html">🎮 Juego</a></li>
+        <li><a href="Evaluación .html" class="activo">📄 Evaluación</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- SISTEMA DE USUARIOS -->
+  <section class="user-system-container">
+    <div class="user-welcome-card">
+      <div id="userInfo"></div>
+      <div id="userStatus" class="user-status"></div>
+    </div>
+    
+    <div class="user-actions">
+      <button class="btn stats-btn">
+        <span class="icon">📊</span>
+        Mis Estadísticas
+      </button>
+      <button class="btn guest-btn">
+        <span class="icon">🎮</span>
+        Modo Invitado
+      </button>
+      <button class="btn logout-btn">
+        <span class="icon">🚪</span>
+        Cerrar Sesión
+      </button>
+    </div>
+
+  <!-- Mascota Intro -->
+  <section class="mascota-section" id="mascotaIntro">
+    <img src="img/mascota.png" alt="EcoGatito" class="mascota">
+    <div id="textoMascota" class="texto-mascota" aria-live="polite"></div>
+    <button id="btnSiguiente" class="btn-siguiente">▶️ Siguiente</button>
+  </section>
+
+  <!-- Contenido principal -->
+  <main id="evaluacion" style="display:none;">
+    <div class="container">
+      <h2>📄 Responde las preguntas</h2>
+
+      <div class="progress-wrap">
+        <div id="progressText">0 / 10 respondidas</div>
+        <div class="progress">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+      </div>
+
+      <!-- Mascota para pistas -->
+      <section class="mascota-section" id="mascotaEvalArea" style="display:none;">
+        <img src="img/mascota.png" alt="EcoGatito" class="mascota">
+        <div id="textoMascotaEval" class="texto-mascota" aria-live="polite"></div>
+      </section>
+
+      <form id="quizForm" aria-live="polite">
+        <!-- Preguntas generadas con JS -->
+      </form>
+
+      <div class="controls">
+        <button id="submitBtn" type="button">✅ Enviar</button>
+        <button id="resetBtn" type="button">🔄 Reiniciar</button>
+      </div>
+
+      <div id="resultado" role="status" aria-atomic="true"></div>
+    </div>
+  </main>
+
+  <!-- FOOTER COMPLETO -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-contacto">
+        <h3>Contacto</h3>
+        <p>Email: soporte@pollution.com</p>
+        <p>Teléfono: +57 310 861 8137</p>
+        <p>Dirección: Vereda Tierra de Gonzales, Moniquirá, Boyacá</p>
+      </div>
+
+      <div class="footer-mapa">
+        <h3>Ubicación</h3>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.123456789!2d-73.391234!3d5.500123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5f1234567890ab%3A0xabcdef123456789!2sMoniquir%C3%A1%2C%20Boyac%C3%A1!5e0!3m2!1ses!2sco!4v1690000000000!5m2!1ses!2sco" 
+          width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+      <div class="footer-boletin">
+        <h3>Suscríbete</h3>
+        <p>Recibe noticias y novedades sobre energías limpias.</p>
+        <form id="formBoletin">
+          <input type="email" placeholder="Tu correo" required>
+          <button type="submit">Suscribirse</button>
+        </form>
+      </div>
+
+      <div class="footer-redes">
+        <h3>Síguenos</h3>
+        <a href="https://instagram.com/" target="_blank" class="instagram">
+          <img src="img/instagram.png" alt="Instagram" class="icon-redes"> Instagram
+        </a>
+      </div>
+    </div>
+
+    <p class="copyright">&copy; 2025 Pollution | Todos los derechos reservados.</p>
+  </footer>
+
+
+  <script src="Evaluación.js"></script>
+  <script src="user-system.js"></script>
+</body>
+</html>
